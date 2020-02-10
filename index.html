@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <title>hana practice</title>
+
+  <link rel="stylesheet" media="all" href="./assets/css/jquery.swipeshow.css">
+    <link rel=”stylesheet” type=”text/css” href=”./assets/css/slideshow-theme.css”>
+  <link rel="stylesheet" media="all" href="./assets/css/style.css">
+
+
+</head>
+<body>
+<!--file:///Users/hana/Desktop/practice_01/index.html-->
+
+<header>
+  <!--ナビー-->
+  <div class="sp-on">
+    <nav class="Hambuger">
+      <ul>
+        <li class=""><a href="">cont01</a></li>
+        <li class=""><a href="">cont02</a></li>
+        <li class=""><a href="">cont03</a></li>
+        <li class=""><a href="">cont04</a></li>
+        <li class=""><a href="">cont05</a></li>
+      </ul>
+    </nav>
+    <div class="menu-trigger" id="menu-trigger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="Hambuger__bk" id="Hambuger__bk"></div>
+  </div>
+
+  <div class="pc-on">
+    <nav class="menu-area">
+    <ul class="menu" id="menu">
+        <!-- メニューボタン
+        ここにマウスを乗せると下のコンテンツが表示される -->
+        <li class="menu_list">
+          <a href="#">メニュー01</a>
+      
+          <!-- メガメニュー
+          一旦非表示にし、マウスを乗せたボタンに連動したコンテンツのみ表示 -->
+          <div class="menu_contents">
+            <ul>
+              <li><a href="#">メニュー01コンテンツ</a></li>
+              <li><a href="#">メニュー01コンテンツ</a></li>
+              <li><a href="#">メニュー01コンテンツ</a></li>
+            </ul>
+          </div>
+        </li>
+      
+        <li class="menu_list">
+          <a href="#">メニュー02</a>
+          <div class="menu_contents">
+            <ul>
+              <li><a href="#">メニュー02コンテンツ</a></li>
+              <li><a href="#">メニュー02コンテンツ</a></li>
+              <li><a href="#">メニュー02コンテンツ</a></li>
+            </ul>
+          </div>
+        </li>
+      
+        <li class="menu_list">
+          <a href="#">メニュー03</a>
+          <div class="menu_contents">
+            <ul>
+              <li><a href="#">メニュー03コンテンツ</a></li>
+              <li><a href="#">メニュー03コンテンツ</a></li>
+              <li><a href="#">メニュー03コンテンツ</a></li>
+            </ul>
+          </div>
+        </li>
+      
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!--スライダー-->
+<section>
+    <!--
+  <div class="slide-wrap">
+    <div class="slide">
+      <img src="./assets/img/img_slide01.jpg" alt="">
+      <img src="./assets/img/img_slide02.jpg" alt="">
+      <img src="./assets/img/img_slide03.jpg" alt="">
+      <img src="./assets/img/img_slide03.jpg" alt="">
+      <img src="./assets/img/img_slide03.jpg" alt="">
+    </div>
+  </div>
+  <div class="nav-button">
+    <p class="nav-r"><a href="#">次へ</a></p>
+    <p class="nav-l"><a href="#">戻る</a></p>
+  </div>
+</section>
+<img src="./assets/img/img_slide03.jpg" alt="">
+-->
+
+  <div class="swipeshow">
+  <ul class="slides">
+    <li class="slide"> <img src="./assets/img/img_slide01.jpg"/> </il>
+    <li class="slide"> <img src="./assets/img/img_slide02.jpg"/> </li>
+    <li class="slide"> <img src="./assets/img/img_slide03.jpg"/> </li>
+  </ul>
+  <div class='dots'></div>
+</div>
+
+
+
+<!--
+<section>
+  <h1>アコーディオン</h1>
+  <dl id="acMenu">
+    <dt class="menu menu01 is-active">Accordion menu 01</dt>
+    <dd class="menu menu01">CONTENT<br>
+        ここにコンテンツを記載します。
+    </dd>
+    <dt class="menu menu02 is-show">Accordion menu 02</dt>
+    <dd class="menu menu02">CONTENT<br>
+        ここにコンテンツを記載します。
+    </dd>
+    <dt class="menu menu03">Accordion menu 03</dt>
+    <dd class="menu menu03">CONTENT<br>
+        ここにコンテンツを記載します。
+    </dd>
+  </dl>
+</section>
+-->
+
+
+<section>
+  <h1>アコーディオン</h1>
+  <div class="toggle_wrap">
+    <div class="toggle">
+      <p>アコーディオンメニュー</p>
+    </div>
+    <div class="toggle_contents">
+      <p>コンテンツ</p>
+      <p>コンテンツ</p>
+    </div>
+    <div class="toggle">
+      <p>アコーディオンメニュー</p>
+    </div>
+    <div class="toggle_contents">
+      <p>コンテンツ</p>
+      <p>コンテンツ</p>
+    </div>
+  </div>
+</section>
+
+
+
+<section>
+  <h1>Tab切り替え</h1>
+  <!--タブ-->
+  <ul class="tab__group">
+    <li class="tab is-active">Tab-A</li>
+    <li class="tab">Tab-B</li>
+    <li class="tab">Tab-C</li>
+  </ul>
+
+  <!--タブを切り替えて表示するコンテンツ-->
+  <div class="panel__group">
+    <div class="panel is-show">Content-A</div>
+    <div class="panel">Content-B</div>
+    <div class="panel p-c">Content-C</div>
+  </div>
+</section>
+
+<div class="yohaku"></div>
+
+<!--
+<div class="fixed" data-modal="fixed">
+  <div>スクロールしない！</div>
+  <button type="button" data-modal="button">モーダル表示</button>
+
+  <div class="yohaku"></div>
+
+  <button type="button" data-modal="button">モーダル表示しても上に戻らない！</button>
+</div>
+
+<div class="modal" data-modal="content">
+  <p>モーダルですよ</p>
+  <button type="button" data-modal="close">閉じる</button>
+</div>
+
+<div class="overlay" data-modal="overlay"></div>
+
+-->
+
+<section class="inner">
+  <h1>モーダル</h1>
+  <div class="content">
+    <a class="js-modal-toggle" href="" data-target="modal01">モーダル01を表示</a><br>
+    <a class="js-modal-toggle" href="" data-target="modal02">モーダル02を表示</a>
+  </div>
+
+  <div id="modal01"  class="modal js-modal">
+    <div class="modal__bg js-modal-close"></div>
+    <div class="modal__content">
+      <p>ここにモーダルウィンドウで表示したいコンテンツを入れます。ここにモーダルウィンドウで表示したいコンテンツを入れます。ここにモーダルウィンドウで表示したいコンテンツを入れます。</p>
+      <a class="js-modal-close" href="">閉じる</a>
+    </div><!--modal__inner-->
+  </div><!--modal-->
+  <div id="modal02" class="modal js-modal">
+    <div class="modal__bg js-modal-close"></div>
+    <div class="modal__content">
+      <p>ここにモーダルウィンドウ02で表示したいコンテンツを入れます。ここにモーダルウィンドウで表示したいコンテンツを入れます。ここにモーダルウィンドウで表示したいコンテンツを入れます。</p>
+      <a class="js-modal-close" href="">閉じる</a>
+    </div><!--modal__inner-->
+  </div><!--modal-->
+</section>
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript" src="./assets/js/script.js"></script>
+<script type=”text/javascript” src=”./assets/js/jquery.sliderPro.min.js”></script>
+
+<script src='./assets/js/jquery.swipeshow.js'></script>
+
+
+</body>
+
+
